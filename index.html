@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Create Account</h1>
+                <label>Nombre</br>
+                    <input class="fields" type="text" id="nombre" name="nombre" value="" pattern="([A-Za-z\s])+" required/>
+                </label>
+                <div class="validation" id="error-nombre"></div>
+                <label>Email</br>
+                    <input class="fields" type="email" id="email" name="e-correo" value="" pattern="\S+@\S+\.\S+" required />
+                </label>
+                <div class="validation" id="error-email"></div>
+                <label>Clave</br>
+                    <input class="fields" type="password" id="clave" name="clave" required />
+                </label>
+                <div class="validation" id="error-clave"></div>
+                <label>Confirme su clave</br>
+                    <input class="fields" type="password" id="confirme-su-clave" name="clave" required />
+                </label>
+                <div class="validation" id="error-confirmation"></div>
+                <label>
+                    <input type="submit" id="button-submit" class="enviar" value="ENVIAR" onclick="validarButton()"/>
+                </label>
+        </form>
+    </div>
+</body>
+
+</html>
